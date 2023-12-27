@@ -1,5 +1,5 @@
 # Batique
-Batique is an android app to classify images of six Batik classes from Northern Coastal Region of Java Island. This project was built for my undergraduate thesis research.<br>
+Batique is an android app to classify images of six Batik classes from Northern Coastal Region of Java Island and one class of images as negative. This project was built for my undergraduate thesis research.
 
 In this research, the CNN method applied with the ResNet50V2, MobileNetV2, and VGG-19 architectures, comparing these three models and integrating them into an Android-based application for automating batik motif classification. 
 

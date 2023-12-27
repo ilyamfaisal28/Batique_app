@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Batique" parent="Theme.Material3.DayNight">
+        <!-- Customize your light theme here. -->
+<!--        <item name="colorPrimary">#673AB7</item>-->
+<!--        <item name="colorPrimaryDark">#512E8F</item>-->
+<!--        <item name="colorAccent">#5C29B6</item>-->
+<!--        CF9F00-->
+        <item name="colorPrimary">@color/purple</item>-->
+        <item name="colorPrimaryDark">#A68000</item>
+        <item name="colorAccent">@color/purple</item>
+        <item name="android:textColor">#272727</item>
+        <item name="android:textColorPrimary">#272727</item>
+<!--        <item name="android:textColorSecondary">@color/white</item>-->
+
+    </style>
+
+    <style name="Theme.Batique" parent="Base.Theme.Batique" />
+</resources>

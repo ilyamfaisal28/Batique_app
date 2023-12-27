@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <DropDownPreference
+        android:title="Tema"
+        android:key="theme_preference"
+        android:summary="Pilih bagaimana mode malam aktif"
+        android:defaultValue="Terang"
+        android:entries="@array/theme_options"
+        android:entryValues="@array/theme_values" />
+</PreferenceScreen>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+        <!--    <com.google.android.material.appbar.MaterialToolbar-->
+        <!--        android:id="@+id/toolbar"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="?attr/actionBarSize"-->
+        <!--        android:background="@color/purple"-->
+        <!--        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--        app:layout_constraintStart_toStartOf="parent"-->
+        <!--        app:layout_constraintTop_toTopOf="parent"-->
+        <!--        app:titleTextColor="@color/white" />-->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true">
+
+
+                <!--        <ImageView-->
+                <!--            android:layout_width="150dp"-->
+                <!--            android:layout_height="30dp"-->
+                <!--            android:src="@drawable/dark"-->
+                <!--            app:layout_constraintStart_toStartOf="parent"-->
+                <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+                <!--    <ImageView-->
+                <!--        android:layout_width="50dp"-->
+                <!--        android:layout_height="40dp"-->
+                <!--        android:layout_marginEnd="11dp"-->
+                <!--        android:src="@drawable/baseline_menu_24"-->
+                <!--        app:layout_constraintBottom_toBottomOf="@+id/toolbar"-->
+                <!--        app:layout_constraintEnd_toEndOf="@+id/toolbar"-->
+                <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_load_image"
+                    android:text="LOAD IMAGE"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="35dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView"/>
+
+                <TextView
+                    android:id="@+id/text_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deteksi Motif Batik"
+                    android:layout_marginTop="20dp"
+                    android:textSize="12pt"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/round_image_70"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.495"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text_title"
+                    app:shapeAppearanceOverlay="@style/RoundedSquare" />
+
+                <Button
+                    android:id="@+id/btn_capture_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TAKE IMAGE"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="35dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+<!--                <androidx.constraintlayout.widget.Guideline-->
+<!--                    android:id="@+id/guideline2"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    app:layout_constraintGuide_begin="206dp" />-->
+
+
+                <TextView
+                    android:id="@+id/text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Hasil Deteksi"
+                    android:textStyle="bold"
+                    android:textSize="19sp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_capture_image" />
+
+                <TextView
+                    android:id="@+id/text_output0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Result here"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="24dp"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text_view" />
+
+                <TextView
+                    android:id="@+id/text_score0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/nilai_persentase0"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text_view" />
+
+                <View
+                    android:id="@+id/garis_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/purple"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text_output0" />
+
+                <TextView
+                    android:id="@+id/text_output1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="14dp"
+                    android:text="Result here"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text_output0" />
+
+                <TextView
+                    android:id="@+id/text_score1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginTop="14dp"
+                    android:text="@string/nilai_persentase1"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text_score0" />
+
+                <View
+                    android:id="@+id/garis_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/purple"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text_output1" />
+
+                <TextView
+                    android:id="@+id/text_output2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="14dp"
+                    android:text="Result here"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text_output1" />
+
+                <TextView
+                    android:id="@+id/text_score2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginTop="14dp"
+                    android:text="@string/nilai_persentase2"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text_score1" />
+
+                <TextView
+                    android:id="@+id/text_how_to_use"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cara Menggunakan:"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="45dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_load_image" />
+
+                <TextView
+                    android:id="@+id/information_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/lorem_ipsum"
+                    android:visibility="visible"
+                    android:lineSpacingExtra="5dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginEnd="45dp"
+                    app:layout_constraintWidth="wrap_content_constrained"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text_how_to_use" />
+
+                <TextView
+                    android:id="@+id/information_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:text="Klik teks hasil deteksi untuk mencari di Google"
+                    android:paddingBottom="50dp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text_output2" />
+
+                <TextView
+                    android:id="@+id/information_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/explanation"
+                    android:paddingBottom="50dp"
+                    android:visibility="visible"
+                    android:lineSpacingExtra="5dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginEnd="45dp"
+                    app:layout_constraintWidth="wrap_content_constrained"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/information_0" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <TextView
+            android:id="@+id/title_about_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Sekilas Tentang Batique"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginStart="30dp"
+            app:layout_constraintWidth="wrap_content_constrained"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/explanation_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/explanation"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:lineSpacingExtra="5dp"
+            app:layout_constraintWidth="wrap_content_constrained"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_about_app"/>
+
+        <TextView
+            android:id="@+id/title_about_developer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Profil Pengembang"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginStart="30dp"
+            app:layout_constraintWidth="wrap_content_constrained"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/explanation_about" />
+
+        <TextView
+            android:id="@+id/my_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/my_profile"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:lineSpacingExtra="5dp"
+            app:layout_constraintWidth="wrap_content_constrained"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linkedin"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/photo_profil"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/polos"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_about_developer"
+            app:shapeAppearanceOverlay="@style/RoundedSquare" />
+
+        <!--    <TextView-->
+        <!--        android:id="@+id/gmail"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:text="   ilyam.faisal28@gmail.com"-->
+        <!--        android:textAlignment="center"-->
+        <!--        android:textSize="16sp"-->
+        <!--        android:layout_marginTop="15dp"-->
+        <!--        android:focusable="true"-->
+        <!--        app:flow_horizontalAlign="start"-->
+        <!--        app:drawableStartCompat="@drawable/bxl_gmail"-->
+        <!--        app:layout_constraintEnd_toEndOf="@+id/myName"-->
+        <!--        app:layout_constraintStart_toStartOf="@+id/myName"-->
+        <!--        app:layout_constraintTop_toBottomOf="@+id/myName" />-->
+        <Button
+            android:id="@+id/gmail"
+            style="@style/Widget.Material3.Button.TextButton.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" ilyam.faisal28@gmail.com"
+            android:paddingHorizontal="15dp"
+            android:layout_marginTop="20dp"
+            app:icon="@drawable/bxl_gmail"
+            app:layout_constraintEnd_toEndOf="@+id/photo_profil"
+            app:layout_constraintStart_toStartOf="@+id/photo_profil"
+            app:layout_constraintTop_toBottomOf="@+id/photo_profil" />
+
+        <Button
+            android:id="@+id/github"
+            style="@style/Widget.Material3.Button.TextButton.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="15dp"
+            android:text=" github.com/ilyamfaisal28"
+            app:icon="@drawable/bxl_github"
+            app:layout_constraintEnd_toEndOf="@+id/photo_profil"
+            app:layout_constraintStart_toStartOf="@+id/photo_profil"
+            app:layout_constraintTop_toBottomOf="@+id/gmail" />
+        <!--    <TextView-->
+        <!--        android:id="@+id/github"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:text="   github.com/ilyamfaisal28"-->
+        <!--        android:textAlignment="center"-->
+        <!--        android:textSize="16sp"-->
+        <!--        android:layout_marginTop="8dp"-->
+        <!--        android:clickable="true"-->
+        <!--        android:height="48dp"-->
+        <!--        app:drawableStartCompat="@drawable/bxl_github"-->
+        <!--        app:flow_horizontalAlign="start"-->
+        <!--        app:layout_constraintHorizontal_bias="0.528"-->
+        <!--        app:layout_constraintStart_toStartOf="@+id/gmail"-->
+        <!--        app:layout_constraintTop_toBottomOf="@+id/gmail"-->
+        <!--        android:focusable="true" />-->
+
+        <!--    <TextView-->
+        <!--        android:id="@+id/linkedin"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:text="   linkedin.com/in/ilyam-faisal"-->
+        <!--        android:textAlignment="center"-->
+        <!--        android:textSize="16sp"-->
+        <!--        android:layout_marginTop="8dp"-->
+        <!--        android:focusable="true"-->
+        <!--        app:drawableStartCompat="@drawable/bxl_linkedin_square"-->
+        <!--        app:flow_horizontalAlign="start"-->
+        <!--        app:layout_constraintHorizontal_bias="0.528"-->
+        <!--        app:layout_constraintStart_toStartOf="@+id/gmail"-->
+        <!--        app:layout_constraintTop_toBottomOf="@+id/github" />-->
+
+        <Button
+            android:id="@+id/linkedin"
+            style="@style/Widget.Material3.Button.TextButton.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="15dp"
+            android:text=" linkedin.com/in/ilyam-faisal"
+            app:icon="@drawable/bxl_linkedin_square"
+            app:layout_constraintEnd_toEndOf="@+id/photo_profil"
+            app:layout_constraintStart_toStartOf="@+id/photo_profil"
+            app:layout_constraintTop_toBottomOf="@+id/github" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="30dp"
+            android:layout_marginTop="25dp"
+            android:text="©2023 Batique | by Ilyam Faisal "
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/my_profile"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

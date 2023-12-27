@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Batique</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string-array name="steps_of_how_to_use">
+        <item>Klik tombol LOAD IMAGE untuk memuat gambar dari galeri atau TAKE IMAGE untuk mengambil gambar menggunakan kamera.\n</item>
+        <item>Usahakan gambar dapat terlihat jelas pada motif batiknya.\n</item>
+        <item>Setelah gambar dipilih, aplikasi Batique akan mengeluarkan hasil deteksi 3 motif batik teratas berdasarkan nilai kemungkinan tertinggi dari 0-100%.\n</item>
+        <item>Anda dapat melakukan penelusuran melalui Google pada motif yang muncul pada hasil deteksi dengan cara klik pada nama motif batik.\n</item>
+    </string-array>
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+    </string>
+    <string name="nilai_persentase0">%1$.2f%%</string>
+    <string name="nilai_persentase1">%1$.2f%%</string>
+    <string name="nilai_persentase2">%1$.2f%%</string>
+    <string name="theme">Pengaturan Tema</string>
+    <string name="cara_penggunaan">Cara Penggunaan</string>
+    <string name="about">Tentang</string>
+    <string name="my_profile">
+        Hai! nama saya Ilyam Faisal. Seorang mahasiswa jurusan Informatika yang memiliki sertifikat TensorFlow Developer dengan
+        beberapa pengalaman pernah mengikuti 2 program Kampus Merdeka, yaitu Studi Independen Bersertifikat (SIB) tahun
+        2021 dan Bangkit Academy tahun 2022 yang disponsori oleh Google, Tokopedia, Gojek, dan Traveloka.\n\nPada SIB 2021
+        saya belajar di jalur Aplikasi Android sedangkan di Bangkit Academy 2022 saya belajar mengenai Machine Learning.
+        Dalam kedua program tersebut saya pernah mengerjakan proyek akhir dalam tim seperti penerapan aplikasi Android dan
+        Machine Learning.\n\nSaat ini berada di semester 8 Informatika di Universitas Ahmad Dahlan Yogyakarta dan sedang berfokus untuk menyelesaikan tugas akhir.
+        Tugas akhir ini yaitu melakukan pengklasifikasian motif batik dari daerah Pulau Jawa bagian utara dengan menggunakan Machine Learning
+        metode CNN (Convolutional Neural Network) berbasis aplikasi android.\n\n
+    </string>
+    <string name="explanation">Aplikasi Batique menerapkan Machine Learning untuk mengklasifikasikan motif batik Pulau Jawa bagian utara
+        menggunakan metode CNN (Convolutional Neural Network).\n\nMotif batik Pulau Jawa bagian utara yang dapat dideteksi yaitu:\nBuketan, Jlamprang, Liong, Megamendung, Singa Barong, dan Tujuh Rupa.\n\nAplikasi Batique juga akan menampilkan hasil deteksi \"Negatif\" jika mendeteksi gambar diluar motif batik tersebut.
+    </string>
+    <string name="tutorial">Cara Penggunaan</string>
+</resources>
